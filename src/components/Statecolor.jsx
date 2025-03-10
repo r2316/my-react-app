@@ -17,6 +17,8 @@ export default function Statecolor() {
                     onClick={() => setcolor('orange')}></div>
                 <div className='h-6 w-6 bg-purple-400 border-2 border-white' 
                     onClick={() => setcolor('purple')}></div>
+                     <div className='h-6 w-6 bg-pink-400 border-2 border-white' 
+                    onClick={() => setcolor('pink')}></div>
             </div>
         </div>
     );
