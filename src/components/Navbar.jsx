@@ -70,6 +70,21 @@ export default function Navbar(){
                 </Link>
               </li>
        
+              <li>
+                <Link
+                  to="/Homewithlogin"
+                  className="block py-2 px-3 text-white rounded-sm text-xl hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                  <FontAwesomeIcon icon={faCloud} /> login
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/Products"
+                  className="block py-2 px-3 text-white rounded-sm text-xl hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                  <FontAwesomeIcon icon={faCloud} /> products
+                </Link>
+              </li>
       </ul>
     </div>
   </div>

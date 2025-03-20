@@ -24,7 +24,8 @@ import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import{ faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import Products from './components/Products'
+import ProductDetails from './components/ProductDetails'
 
 
 function App() {
@@ -32,11 +33,18 @@ function App() {
 
   return (
     <>
+  
    
-
-<Navbar></Navbar>
+<Navbar>
+  
+</Navbar>
 <Routes>
-<Route path="/" element={<Home></Home>}></Route>
+<Route path='/productdetails/:pid' element={<ProductDetails></ProductDetails>}></Route>
+<Route path='/products' element={<Products></Products>}></Route>
+<Route path="/" element={<Homewithlogin></Homewithlogin>}></Route>
+<Route path="/login" element={<login></login>}></Route>
+<Route path="logout" element={<Logout></Logout>}></Route>
+<Route path="/home" element={<Home></Home>}></Route>
 <Route path="/About" element={<About></About>}></Route>
 <Route path="Project" element={<Project></Project>}></Route>
 <Route path="/Workingfive" element={<Workingfive></Workingfive>}></Route>
@@ -49,7 +57,7 @@ function App() {
 </Routes>
 
 
-<footer style={{backgroundColor:"grey", height:"50px", width:"100%",display:"flex",alignItems:"center"}}>
+{/*<footer style={{backgroundColor:"grey", height:"50px", width:"100%",display:"flex",alignItems:"center"}}>
         <span style={{color:"black", fontSize:"20px",textAlign:"left",paddingLeft:"10px"
             ,alignItems:"center"}}>Designed and Developed by Riya Patel</span>
         <span style={{color:"black", fontSize:"20px",marginLeft:"300px"}}>Copyright © 2025 SB</span>
@@ -61,7 +69,7 @@ function App() {
     <a href="https://www.instagram.com/" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a>
           
     </span>
-    </footer>
+    </footer>*/}
    
     {/*} <AboutMe userimg={boyimg}
     
@@ -90,7 +98,8 @@ function App() {
     </>
   )
 }
-import { Form } from 'react-router'
+
+import { Form, HashRouter } from 'react-router'
 import { Link } from 'react-router'
 import Home from './components/Home'
 import About from './components/About'
@@ -98,5 +107,9 @@ import Project from './components/Project'
 import Workingfive from './components/Workingfive'
 import UseReftable from './components/UserReftable'
 import Statecolor from './components/Statecolor'
+import Homewithlogin from './components/Homewithlogin'
+import Logout from './components/Logout'
+import login from './components/Login'
+
 
 export default App

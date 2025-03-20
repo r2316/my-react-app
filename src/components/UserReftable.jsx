@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Starfield from "react-starfield";
 
 export default function UseReftable() {
     const [i, setI] = useState(0);  
@@ -47,6 +48,14 @@ export default function UseReftable() {
                             ))}
                         </div>
                 </div>
+            </div>
+            <div className="w-full">
+                <Starfield starCount={5000}
+                starColor={[255,255,255]}
+                speedFactor={0.05}
+                backgroundColor="black">
+
+                </Starfield>
             </div>
         </>
     );

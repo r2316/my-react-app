@@ -33,7 +33,7 @@ export default function About(){
                         fontSize:"40px",fontWeight:"bolder",
                         letterSpacing:"2px"}}>I'M</span>
                 </div>
-            <div style={{fontSize:"26px",textAlign:"left",wordSpacing:"3px",
+            <div style={{fontSize:"20px",textAlign:"left",wordSpacing:"3px",
                 marginLeft:"10px",marginTop:"40px"}}>
                 <span style={{ color:"white",paddingTop:"5px",}}>
                 Hi Everyone, I am </span> 
